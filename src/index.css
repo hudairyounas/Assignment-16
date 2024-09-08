@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#111827];
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .rgb-border {
+    @apply border-4;
+    border-color: transparent;
+    border-image: linear-gradient(
+      45deg,
+      rgba(42, 40, 185, 1) 6%,
+      rgba(255, 6, 66, 1) 100%
+    );
+    border-image-slice: 1;
+  }
+}
